@@ -3,6 +3,8 @@ import "./Intro.css";
 import me from "../../img/me.png";
 import me1 from "../../img/me2.png";
 import me3 from "../../img/me2.png";
+import me4 from "../../img/me4.jpg";
+import me5 from "../../img/mobile.png";
 
 const Intro = () => {
   return (
@@ -87,7 +89,8 @@ const Intro = () => {
       <div className="i-right">
         <div className="i-bg"></div>
         <div className="i-right-img">
-          <img src={me1} alt="" className="i-img" />
+          <img src={me4} alt="" className="i-img" />
+          <img src={me5} alt="" className="i-img-mobile" />
         </div>
       </div>
     </div>
