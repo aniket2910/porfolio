@@ -1,18 +1,50 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Product.css";
-import p1 from "../../img/p_1.png";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Bounce from "react-reveal/Bounce";
 
-const Product = ({ link, img }) => {
+const Product = ({ gitlink, link, img, id }) => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
-    <div className="p">
-      <div className="p-browser">
-        <div className="p-circle"></div>
-        <div className="p-circle"></div>
-        <div className="p-circle"></div>
-      </div>
-      <a href={link} rel="noreferrer" target="_blank">
-        <img src={img.p1} alt="" className="p-img" />
-      </a>
+    <div
+      data-aos="fade-down"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      className="p"
+    >
+      <Bounce left>
+        <div className="p-browser">
+          <div className="p-circle orange"></div>
+          <div className="p-circle yellow"></div>
+          <div className="p-circle green"></div>
+        </div>
+        <div className="p-img">
+          <img src={img[`p${id}`]} alt="" />
+        </div>
+        <div className="live-handles">
+          <div className="handle-icon">
+            <a
+              className="github"
+              target="_blank"
+              rel="noreferrer"
+              href={gitlink}
+            >
+              <GitHubIcon />
+            </a>
+          </div>
+          <div className="handle-icon">
+            <a className="live" target="_blank" rel="noreferrer" href={link}>
+              Live
+            </a>
+          </div>
+        </div>
+      </Bounce>
     </div>
   );
 };

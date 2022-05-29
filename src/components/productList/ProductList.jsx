@@ -1,24 +1,36 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Product from "../product/Product";
 import "./ProductList.css";
 import data from "../../data";
-console.log(data);
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Flip from "react-reveal/Flip";
 const ProductList = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
-    <div className="pl">
-      <div className="pl-texts">
-        <h1 className="pl-title">Create & Inspire</h1>
-        <p className="pl-desc">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
-          distinctio sed accusantium. Ipsam, doloribus. Ullam, voluptatibus
-          facilis? Odio fugiat eligendi temporibus soluta fuga sapiente,
-          reiciendis laboriosam. Pariatur repellendus vel itaque!
-        </p>
-      </div>
-      <div className="pl-list">
-        {data.map((item) => (
-          <Product key={item.id} {...item} />
-        ))}
+    <div
+      data-aos="fade-down"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      className="wrapper"
+    >
+      <div className="container">
+        <Flip top>
+          <div className="pl">
+            <div className="pl-texts">
+              <h1 className="pl-title">My Projects</h1>
+            </div>
+            <div className="pl-list">
+              {data.map((item) => (
+                <Product key={item.id} {...item} />
+              ))}
+            </div>
+          </div>
+        </Flip>
       </div>
     </div>
   );

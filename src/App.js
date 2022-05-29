@@ -1,10 +1,12 @@
 import { useContext } from "react";
 import About from "./components/about/About";
-import Contact from "./components/contact/Contact";
-import Intro from "./components/intro/Intro";
 import ProductList from "./components/productList/ProductList";
-import Toogle from "./components/toogle/Toogle";
 import { ThemeContext } from "./context";
+import "./common.css";
+import Quote from "./components/Quote/Quote";
+import NIntro from "./components/NIntro/NIntro";
+import Skill from "./components/Skills/Skill";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const theme = useContext(ThemeContext);
@@ -16,11 +18,12 @@ function App() {
         color: darkMode && "white",
       }}
     >
-      <Toogle />
-      <Intro />
+      <Quote />
+      <NIntro />
       <About />
+      <Skill />
       <ProductList />
-      <Contact />
+      <Footer />
     </div>
   );
 }

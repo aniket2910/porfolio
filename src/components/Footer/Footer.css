@@ -1,0 +1,51 @@
+.f {
+  border-top: 1px solid #333;
+}
+.f-wrapper {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.f-head {
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.f-name {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.handles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.h-icon a svg {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 20px;
+}
+
+.h-icon a.linked_in svg {
+  fill: #4070f4;
+}
+.h-icon a.github svg {
+  fill: #fff;
+}
+.h-icon a.email svg {
+  fill: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .f-head {
+    font-size: 35px;
+  }
+  .f-name {
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,94 @@
+.i-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 150px 0;
+}
+.i-left,
+.i-right {
+  flex: 0.6;
+}
+
+.i-img {
+  width: 100%;
+  border: 10px solid #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+  padding: 10px;
+}
+
+.i-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.i-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.i-text {
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+}
+.i-resume,
+.work {
+  width: 78%;
+  margin-top: 20px;
+}
+.work {
+  margin-top: 30px;
+  display: flex;
+}
+.work .work-icon a {
+  margin-right: 12px;
+  text-decoration: none;
+}
+.work .work-icon a svg {
+  width: 3em;
+  height: 3em;
+}
+.work .work-icon a.linked_in svg {
+  fill: #4070f4;
+}
+.work .work-icon a.github svg {
+  fill: #fff;
+}
+.work .work-icon a.email svg {
+  fill: #fff;
+}
+.i-resume a.r-btn {
+  text-decoration: none;
+  padding: 10px 30px;
+  background-color: #4070f4;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+  .i-wrapper {
+    flex-direction: column;
+  }
+  .i-left,
+  .i-right {
+    flex: 1;
+    padding: 20px;
+  }
+  .i-resume {
+    width: 100%;
+  }
+  .work {
+    width: 100%;
+  }
+}
