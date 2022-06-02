@@ -34,7 +34,7 @@ const data = [
   {
     id: 4,
     img: { p4 },
-    link: "https://beamish-gelato-a238b9.netlify.app/",
+    link: "https://tic-tac-toe-game-basic.netlify.app/",
     gitlink: "https://github.com/aniket2910/tic-tac-toe",
     title: "Tic-Tac-Toe Game",
     desc: "This is a Tic-Tac-Toe game for user entertainment.",
