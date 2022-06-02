@@ -17,6 +17,7 @@ const About = () => {
       data-aos-delay="50"
       data-aos-duration="1000"
       data-aos-easing="ease-in-out"
+      id="about"
       className="wrapper"
     >
       <div className="container">

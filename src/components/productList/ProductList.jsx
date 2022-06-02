@@ -5,6 +5,7 @@ import data from "../../data";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Flip from "react-reveal/Flip";
+import { Element } from "react-scroll/modules";
 const ProductList = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
@@ -17,6 +18,7 @@ const ProductList = () => {
       data-aos-duration="1000"
       data-aos-easing="ease-in-out"
       className="wrapper"
+      id="projects"
     >
       <div className="container">
         <Flip top>

@@ -4,15 +4,16 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 150px 0;
+  padding: 0 60px;
+  /* padding: 150px 0; */
 }
 .s-heading p {
-  font-size: 60px;
+  font-size: 30px;
   font-weight: 700;
   text-align: center;
 }
 .s-box {
-  max-width: 250px;
+  max-width: 200px;
   padding: 20px;
   width: 100%;
   display: flex;
@@ -22,7 +23,7 @@
 }
 
 .s-name {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 500;
 }
 .s-box .s-img-box {
@@ -47,5 +48,8 @@
   }
   .s-heading {
     font-size: 35px;
+  }
+  .s-box {
+    max-width: 170px;
   }
 }

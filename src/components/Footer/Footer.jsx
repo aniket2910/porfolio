@@ -18,6 +18,7 @@ const Footer = () => {
       data-aos-delay="50"
       data-aos-duration="1000"
       data-aos-easing="ease-in-out"
+      id="contact"
       className="wrapper f"
     >
       <div className="container">
